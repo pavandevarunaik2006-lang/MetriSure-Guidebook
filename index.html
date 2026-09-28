@@ -896,7 +896,6 @@
            ======================================================== -->
       <section class="page-section active" id="page-1">
         <div class="badge-bar">
-          <span class="tag tag-blue">SIH 2026 Finalist</span>
           <span class="tag tag-cyan">Problem Statement: SIH26035</span>
           <span class="tag tag-slate">OIML Recommendation R-76</span>
           <span class="tag tag-green">Zero-AI Statutory Decision Path</span>
@@ -1200,11 +1199,171 @@
         <div class="badge-bar">
           <span class="tag tag-blue">Governance</span>
           <span class="tag tag-slate">Role Permissions</span>
+          <span class="tag tag-blue">Demo Access</span>
         </div>
         <h1 class="page-title">Dashboard & Role-Based Access Control (RBAC)</h1>
         <p class="page-subtitle">
           Ensuring strict segregation of duties between test execution, compliance review, certificate issuance, and administrative oversight.
         </p>
+
+        <!-- ========================================================
+             LOGIN & DEMO ACCESS SECTION
+             ======================================================== -->
+        <div class="card" id="login-demo-access" style="border: 2px solid #2563eb; background: #ffffff; box-shadow: var(--shadow-md); margin-bottom: 24px;">
+          <div class="card-header" style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 12px; margin-bottom: 16px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="card-title" style="font-size: 18px; color: #0f172a;">
+                🔐 Login &amp; Demo Access
+              </span>
+            </div>
+            <span class="tag tag-blue" style="font-weight: 700; letter-spacing: 0.5px;">DEMO ACCESS</span>
+          </div>
+
+          <!-- Step 1: Open Live App -->
+          <div style="margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; background: #f8fafc; padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+              <div>
+                <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #2563eb; letter-spacing: 0.5px; margin-bottom: 2px;">STEP 1 — Open the Live Application</div>
+                <div style="font-size: 14px; font-weight: 600; color: #0f172a; margin-bottom: 4px;">Access the deployed MetriSure production web application</div>
+                <a href="https://metri-sure.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 13px; color: #1d4ed8; text-decoration: underline; font-weight: 600;">
+                  https://metri-sure.vercel.app/
+                </a>
+              </div>
+              <a href="https://metri-sure.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 13px; text-decoration: none;">
+                Open Live Application ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 2: Enter Demo Credentials -->
+          <div style="margin-bottom: 20px;">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #2563eb; letter-spacing: 0.5px; margin-bottom: 10px;">
+              STEP 2 — Enter Demo Credentials
+            </div>
+            <div class="grid-4" style="gap: 14px;">
+              <!-- Technician Card -->
+              <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #2563eb; border-radius: 8px; padding: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #2563eb;">TECHNICIAN</span>
+                  <span class="tag tag-blue" style="font-size: 10px; padding: 1px 6px;">Priya Sharma</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Email / Username:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">technician@metrisure.demo</code>
+                </div>
+                <div>
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Password:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">demo123</code>
+                </div>
+                <div style="margin-top: 8px; font-size: 11px; color: #64748b;">
+                  Role: <strong style="color: #0f172a;">Technician</strong>
+                </div>
+              </div>
+
+              <!-- Reviewer Card -->
+              <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #d97706; border-radius: 8px; padding: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #d97706;">REVIEWER</span>
+                  <span class="tag tag-amber" style="font-size: 10px; padding: 1px 6px;">Rajesh Kumar</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Email / Username:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">reviewer@metrisure.demo</code>
+                </div>
+                <div>
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Password:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">demo123</code>
+                </div>
+                <div style="margin-top: 8px; font-size: 11px; color: #64748b;">
+                  Role: <strong style="color: #0f172a;">Reviewer</strong>
+                </div>
+              </div>
+
+              <!-- Approver Card -->
+              <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #059669; border-radius: 8px; padding: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #059669;">APPROVER</span>
+                  <span class="tag tag-green" style="font-size: 10px; padding: 1px 6px;">Dr. Anita Desai</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Email / Username:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">approver@metrisure.demo</code>
+                </div>
+                <div>
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Password:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">demo123</code>
+                </div>
+                <div style="margin-top: 8px; font-size: 11px; color: #64748b;">
+                  Role: <strong style="color: #0f172a;">Approver</strong>
+                </div>
+              </div>
+
+              <!-- Administrator Card -->
+              <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #7c3aed; border-radius: 8px; padding: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #7c3aed;">ADMINISTRATOR</span>
+                  <span class="tag tag-slate" style="font-size: 10px; padding: 1px 6px;">Vikram Singh</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Email / Username:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">admin@metrisure.demo</code>
+                </div>
+                <div>
+                  <span style="font-size: 11px; color: #64748b; display: block; margin-bottom: 2px;">Password:</span>
+                  <code style="display: block; font-family: var(--font-mono); font-size: 12px; background: #ffffff; padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; color: #0f172a; user-select: all; font-weight: 600;">demo123</code>
+                </div>
+                <div style="margin-top: 8px; font-size: 11px; color: #64748b;">
+                  Role: <strong style="color: #0f172a;">Administrator</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Login -->
+          <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px;">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #1d4ed8; letter-spacing: 0.5px; margin-bottom: 2px;">STEP 3 — Login</div>
+            <div style="font-size: 13px; color: #1e293b; line-height: 1.6;">
+              Enter the credentials above and click Login to access the MetriSure dashboard.
+              <span style="display: block; margin-top: 4px; color: #475569; font-size: 12px;">
+                💡 <em>Quick Demo Shortcut:</em> You can also click any of the 4 role buttons under <strong>Quick Demo Access</strong> directly on the login screen to sign in with one click.
+              </span>
+            </div>
+          </div>
+
+          <!-- Demo Flow -->
+          <div style="background: #f8fafc; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px 18px; margin-bottom: 16px;">
+            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #475569; letter-spacing: 0.5px; margin-bottom: 8px;">
+              🧭 Suggested Demo Flow for Judges
+            </div>
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 12px;">
+              <span class="tag tag-blue" style="font-weight: 700;">Login</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Dashboard</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Instruments</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Test Sessions</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Test Execution</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Compliance Results</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">WhyPASS / WhyFAIL</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Decision Trace</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-slate">Review / Approval</span>
+              <span style="color: #94a3b8; font-weight: bold;">→</span>
+              <span class="tag tag-green" style="font-weight: 700;">Reports</span>
+            </div>
+          </div>
+
+          <!-- Evaluation Disclaimer Note -->
+          <div style="display: flex; align-items: flex-start; gap: 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 12px; color: #92400e; line-height: 1.5;">
+            <span style="font-size: 14px; line-height: 1;">⚠️</span>
+            <span><strong>Note:</strong> Demo credentials are provided for evaluation of the deployed prototype. Please do not use them for production or sensitive data.</span>
+          </div>
+        </div>
 
         <!-- Role Matrix -->
         <div class="grid-4" style="margin-bottom: 24px;">
